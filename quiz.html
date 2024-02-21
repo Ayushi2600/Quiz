@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #container {
+        width: 600px;
+        height: 100vh;
+        background-color: rgb(21, 21, 238);
+        color: #fff;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #container div {
+        margin-bottom: 30px;
+      }
+
+      #container p {
+        font-size: 2em;
+        margin-bottom: 10px;
+      }
+
+      #container input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: greenyellow;
+        color: #333;
+        border: 0;
+        cursor: pointer;
+      }
+
+      #container label {
+        font-size: 1.5em;
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>QUIZ</h1>
+      <h2 id="score"></h2>
+      <form onsubmit="submitHandler(event)">
+        <div>
+           Which among the following is not an operating system?
+
+A - UNIX
+
+B - LINUX
+
+C - OS X
+
+D - PITEX
+          <p>Which among the following is not an operating system?</p>
+          <input type="radio" name="q1" value="A" /><label
+            >UNIX</label
+          >
+          <input type="radio" name="q1" value="B" /><label
+            >Hyper Text Markup Language</label
+          >
+        </div>
+        <div>
+          <p>Where can we use the "style" tag? </p>
+          <input type="radio" name="q2" value="A" /><label>Only in the "head" element</label>
+          <input type="radio" name="q2" value="B" /><label>Only in the "body" element</label>
+        </div>
+        <div>
+          <p> How you can open the link in a new window?</p>
+          <input type="radio" name="q3" value="A" /><label>target="_blank"</label>
+          <input type="radio" name="q3" value="B" /><label>target="_window"</label>
+        </div>
+        <div>
+          <p>What is the HTML element used to display an image?</p>
+          <input type="radio" name="q4" value="A" /><label>"image"</label>
+          <input type="radio" name="q4" value="B" /><label>"img"</label>
+        </div>
+        <div>
+          <p>How to make a text italic?</p>
+          <input type="radio" name="q5" value="A" /><label
+            ><em>Some text.</em></label
+          >
+          <input type="radio" name="q5" value="B" /><label
+            ><i>Some text.</i></label
+          >
+        </div>
+        <div>
+          <input type="submit" value="SUBMIT QUIZ" />
+        </div>
+      </form>
+    </div>
+    <script src="./quiz.js"></script>
+  </body>
+</html>

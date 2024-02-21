@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #container {
+        width: 600px;
+        height: 100vh;
+        background-color: rgb(21, 21, 238);
+        color: #fff;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #container div {
+        margin-bottom: 30px;
+      }
+
+      #container p {
+        font-size: 2em;
+        margin-bottom: 10px;
+      }
+
+      #container input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: greenyellow;
+        color: #333;
+        border: 0;
+        cursor: pointer;
+      }
+
+      #container label {
+        font-size: 1.5em;
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>QUIZ</h1>
+      <h2 id="score"></h2>
+      <form onsubmit="submitHandler(event)">
+        <div>
+          <p>Who is the prime minister of India?</p>
+          <input type="checkbox" name="q1" value="A" /><label
+            >Rahul Gandhi</label
+          >
+          <input type="checkbox" name="q1" value="B" /><label
+            >Narendra Modi</label
+          >
+        </div>
+        <div>
+          <p>What is the National game of India?</p>
+          <input type="checkbox" name="q2" value="A" /><label>Cricket</label>
+          <input type="checkbox" name="q2" value="B" /><label>Hockey</label>
+        </div>
+        <div>
+          <p>What is the national flower of India?</p>
+          <input type="checkbox" name="q3" value="A" /><label>lotus</label>
+          <input type="checkbox" name="q3" value="B" /><label>Rose</label>
+        </div>
+        <div>
+          <p>What is the capital of India?</p>
+          <input type="checkbox" name="q4" value="A" /><label>New Delhi</label>
+          <input type="checkbox" name="q4" value="B" /><label>Mumbai</label>
+        </div>
+        <div>
+          <p>Who is the Father of Nation?</p>
+          <input type="checkbox" name="q5" value="A" /><label
+            >Mahatma Gandhi</label
+          >
+          <input type="checkbox" name="q5" value="B" /><label
+            >Subash Chandra Bose</label
+          >
+        </div>
+        <div>
+          <input type="submit" value="SUBMIT QUIZ" />
+        </div>
+      </form>
+    </div>
+    <script src="quiz.js"></script>
+  </body>
+</html>
